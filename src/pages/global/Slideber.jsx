@@ -32,7 +32,7 @@ const Slideber = ({ children }) => {
             <div className="bars" onClick={toggle}>{isOpen ? <FaTimes></FaTimes> : <FaBars></FaBars> }</div>
             <div className="sidebar bg-slate-800" style={{display: isOpen ? "block" : ""}}>
                 <div className="text-center  p-5">
-                    <div className="avatar mx-16 md:pt-10">
+                    <div className="avatar mx-16 md:pt-7">
                         <div className="w-28 rounded-full">
                             <img className="" src={image} />
                         </div>
@@ -67,7 +67,7 @@ const Slideber = ({ children }) => {
                                 <Link to="/about">About</Link>
                             </li>
                             <li className='link_title rounded-md'>
-                                <Link to="/portfolio">Portfolio</Link>
+                                <Link to="/portfolio">Projects</Link>
                             </li>
                             <li className='link_title mt-4 rounded-md'>
                                 <Link to="/contact">Contact</Link>

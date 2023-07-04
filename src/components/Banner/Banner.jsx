@@ -8,7 +8,7 @@ const Banner = () => {
                 <h3 className="text-xl">HI THERE !</h3>
                 <h2 className="text-3xl font-bold my-3">I M Bishawnath Ray</h2>
                 <p>Im mern stack developer</p>
-                <p className='font-semibold '> I am a <span className='text-red-600'>front-end developer</span> with a passion for creating engaging and user-friendly websites. I have experience working with HTML, CSS and JavaScript and I specialize in creating responsive and visually appealing interfaces. </p>
+                <p className='font-semibold '> I am a <span className='text-cyan-400'>MERN Stack developer</span> with a passion for creating engaging and user-friendly websites. I have experience working with HTML, CSS and JavaScript and I specialize in creating responsive and visually appealing interfaces. </p>
                 <div className='flex justify-start gap-5 my-5'>
                     <button className="btn btn-outline btn-success ">View Resume</button>
                     <button className="btn btn-outline btn-success ">Hired Me</button>

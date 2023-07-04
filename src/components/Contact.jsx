@@ -1,8 +1,7 @@
 import  { useState, useRef } from 'react';
-import developer from './developer.json'
+import developer from '../components/Banner/developer.json'
 import Lottie from 'lottie-react';
 import { HiArrowRight , HiLocationMarker , HiPhone ,HiMail } from "react-icons/hi";
-import Footer from '../global/Footer';
 
 const Contact = () => {
     const [username, setUsername] = useState("")
@@ -95,7 +94,7 @@ const Contact = () => {
     // };
 
     return (
-        <section id='contact' className='w-full py-7 p-10'>
+        <section id='contact' className='w-full py-7 mt-24'>
 
             <div className='w-full'>
                 <h2 className='text-4xl font-bold my-7 flex'><span>Contact With Me</span> <HiArrowRight className='mt-2 ml-10'></HiArrowRight></h2>
@@ -168,9 +167,6 @@ const Contact = () => {
                 </div>
             </div>
             <hr className='mt-10'/>
-            <div className='mt-16'>
-            <Footer></Footer>
-            </div>
         </section>
     );
 };

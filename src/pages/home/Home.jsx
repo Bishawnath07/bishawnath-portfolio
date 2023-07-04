@@ -1,5 +1,9 @@
 import About from "../../components/About";
 import Banner from "../../components/Banner/Banner";
+import Contact from "../../components/Contact";
+import Projects from "../../components/Projects/Projects";
+import Skilled from "../../components/Projects/Skilled";
+import Footer from "../global/Footer";
 
 
 const Home = () => {
@@ -7,7 +11,10 @@ const Home = () => {
         <div className='p-10'>
            <Banner></Banner>
            <About></About>
-           {/* <Projects></Projects> */}
+           <Skilled></Skilled>
+           <Projects></Projects>
+           <Contact></Contact>
+           <Footer></Footer>
         </div>
     );
 };
