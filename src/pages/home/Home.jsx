@@ -8,7 +8,7 @@ import Footer from "../global/Footer";
 
 const Home = () => {
     return (
-        <div className='p-10'>
+        <div className='md:p-5'>
            <Banner></Banner>
            <About></About>
            <Skilled></Skilled>

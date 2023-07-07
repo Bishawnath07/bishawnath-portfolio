@@ -29,7 +29,9 @@ const Slideber = ({ children }) => {
 
     return (
         <div className="container bg-slate-900 text-white">
-            <div className="bars" onClick={toggle}>{isOpen ? <FaTimes></FaTimes> : <FaBars></FaBars> }</div>
+            <div className="bars" onClick={toggle}>
+                
+                {isOpen ? <FaTimes></FaTimes> : <FaBars></FaBars> }</div>
             <div className="sidebar bg-slate-800" style={{display: isOpen ? "block" : ""}}>
                 <div className="text-center  p-5">
                     <div className="avatar mx-16 md:pt-7">

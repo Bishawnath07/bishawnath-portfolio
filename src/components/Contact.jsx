@@ -101,14 +101,14 @@ const Contact = () => {
                 <div className='w-full h-auto md:flex gap-10 items-center'>
                     
                     {/* right side */}
-                    <div className='w-full md:w-[60%] h-full px-4 md:px-0  from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne flex flex-col'>
+                    <div className='w-full md:w-[60%] h-full px-5 md:px-0  from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne flex flex-col'>
                         <form ref={form}  className='w-full flex flex-col gap-6 py-2'>
                             
                     
 
-                            <div className='w-full flex gap-10'>
+                            <div className='w-full '>
                                 {/* name */}
-                                <div className='w-1/2 flex flex-col gap-4'>
+                                <div className='md:w-1/2 flex flex-col gap-4'>
                                     <p className='text-sm text-gray-400 uppercase tracking-wide'>Your Name</p>
                                     <input onChange={(e) => setUsername(e.target.value)} value={username} name='from_name' type="text" placeholder="name" className="rounded-md p-2" />
                                 </div>
@@ -121,9 +121,9 @@ const Contact = () => {
                                 </div> */}
                             </div>
 
-                            <div className='w-full flex gap-10'>
+                            <div className='w-full '>
                                 {/* email */}
-                                <div className='w-1/2 flex flex-col gap-4'>
+                                <div className='md:w-1/2 flex flex-col gap-4'>
                                     <p className='text-sm text-gray-400 uppercase tracking-wide'>email</p>
                                     <input onChange={(e) => setEmail(e.target.value)} value={email} name='user_email' type="email" placeholder="email" className="rounded-md p-2" />
                                 </div>
@@ -138,7 +138,7 @@ const Contact = () => {
                             {/* message */}
                             <div className='flex flex-col gap-4'>
                                 <p className='text-sm text-gray-400 uppercase tracking-wide'>message</p>
-                                <textarea onChange={(e) => setMessage(e.target.value)} value={message} name='message' rows="10" className="rounded-md " placeholder='Your Message'>
+                                <textarea onChange={(e) => setMessage(e.target.value)} value={message} name='message' rows="7" className="rounded-md " placeholder='Your Message'>
 
                                 </textarea>
 
@@ -147,14 +147,14 @@ const Contact = () => {
                                 {/* <input type="email" placeholder="subject" className="contactInput" /> */}
                             </div>
 
-                            <div className='text-center'>
+                            <div className='text-start'>
                                 {/* <button onClick={handleSend} className="btn btn-block  btn-outline duration-300 btn-secondary"><BsFillSendCheckFill></BsFillSendCheckFill> Submit</button> */}
-                                <input type="submit" className="btn btn-block  btn-outline duration-300 btn-secondary" value="Submit" />
+                                <input type="submit" className="btn  w-1/3 btn-outline duration-300 btn-secondary" value="Submit" />
                             </div>
                         </form>
                     </div>
 
-                    <div className='w-full md:w-[40%] '>
+                    <div className='w-full md:w-[40%] px-5 md:px-0'>
                         <h3 className='text-4xl font-bold'>Get in touch</h3>
                         <p>Fill in the form to start a conversation</p>
                         <p className='flex my-5'>
