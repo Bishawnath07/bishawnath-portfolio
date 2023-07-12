@@ -8,12 +8,20 @@ import Contact from './pages/contact/Contact'
 import ProjectDetailsOne from './components/Projects/ProjectDetails/ProjectDetailsOne'
 import ProjectDetailsSecond from './components/Projects/ProjectDetails/ProjectDetailsSecond'
 import ProjectDetailsThird from './components/Projects/ProjectDetails/ProjectDetailsThird'
+import { useEffect, useState } from 'react'
+import Loader from './Loader/Loader'
 
 function App() {
+  const [isLoading , setIsLoading] = useState(true)
 
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsLoading(false)
+    } , 2500)
+  })
   return (
     <div>
-        <Slideber>
+        {isLoading ? <Loader></Loader> : <Slideber>
             <Routes>
                 <Route path='/' element= {<Home/>}/>
                 <Route path='/home' element= {<Home/>}/>
@@ -24,7 +32,7 @@ function App() {
                 <Route path='/ProjectDetailsSecond' element= {<ProjectDetailsSecond/>}/>
                 <Route path='/ProjectDetailsThird' element= {<ProjectDetailsThird/>}/>
             </Routes>
-        </Slideber>
+        </Slideber>}
     </div>
   )   
 }

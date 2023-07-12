@@ -55,6 +55,19 @@ main{
     cursor: pointer;
     z-index: 1;
 }
+.loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh; /* Adjust this value to match the desired height of the container */
+  }
+  
+  .loader {
+    /* Add any additional styling for the loader component */
+  }
+  
+  
 @media (max-width: 991px){
     .bars{
         display: block;
