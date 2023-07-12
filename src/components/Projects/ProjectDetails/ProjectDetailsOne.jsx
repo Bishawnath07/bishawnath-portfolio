@@ -12,13 +12,13 @@ const ProjectDetailsOne = () => {
                 <Link to="/"><button className="text-xl font-semibold  mb-5"><HiArrowLeft className="btn-circle btn btn-sm"></HiArrowLeft></button></Link>
                 <p className="text-xl font-semibold ml-5">Projects Details</p>
                 </div>
-         <div className=" flex justify-between gap-10">
+         <div className=" md:flex justify-between gap-10">
        
           
-                <div className="w-1/2">
+                <div className="md:w-1/2">
                     <AutoImageSlider />
                 </div>
-                <div className="w-1/2">
+                <div className="md:w-1/2">
                     <h2 className="text-3xl font-semibold">Art Spires Academy</h2>
                     <p className="font-semibold my-5">A fully functional, full-stack website based on MERN .There are 3 different dashboards, student, instructor, admin dashboard and backend is used as a database with Fire authentication.</p>
                     <div className="flex gap-5">

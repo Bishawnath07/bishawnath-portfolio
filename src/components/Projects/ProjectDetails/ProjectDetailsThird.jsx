@@ -18,8 +18,8 @@ const ProjectDetailsThird = () => {
                     <Link to="/"><button className="text-xl font-semibold  mb-5"><HiArrowLeft className="btn-circle btn btn-sm"></HiArrowLeft></button></Link>
                     <p className="text-xl font-semibold ml-5">Projects Details</p>
                 </div>
-                <div className=" flex justify-between gap-10">
-                    <div className="w-1/2">
+                <div className=" md:flex justify-between gap-10">
+                    <div className="md:w-1/2">
                         <Carousel autoPlay infiniteLoop className='text-center '>
                             <div>
                                 <img src={image} alt="Image 1" />
@@ -48,7 +48,7 @@ const ProjectDetailsThird = () => {
 
                         </Carousel>
                     </div>
-                    <div className="w-1/2">
+                    <div className="md:w-1/2">
                         <h2 className="text-3xl font-semibold">Chefs Cuisine</h2>
                         <p className="font-semibold my-5">A fully functional, full-stack website based on MERN .There are top 6 chifs and his Supper recipe . User can mark add recipe his favorite chifs . </p>
                         <div className="flex gap-5">
@@ -64,7 +64,7 @@ const ProjectDetailsThird = () => {
                         </div>
                         <div>
                             <h2 className="text-2xl font-semibold my-5">Technology</h2>
-                            <div className="grid md:grid-cols-3 gap-4">
+                            <div className="grid grid-cols-3 gap-4">
                                 <button className="btn  btn-sm btn-neutral">JavaScript</button>
                                 <button className="btn  btn-sm btn-neutral">React.js</button>
                                 <button className="btn  btn-sm btn-neutral">Node.js</button>
