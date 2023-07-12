@@ -3,6 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import img from './toys-shop.web.app_.png'
 import img2 from './chif recipe.png'
 import img1 from './art spire academi.png'
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
     return (
@@ -16,7 +17,7 @@ const Portfolio = () => {
                     <div className="card-body text-black">
                         <h2 className="card-title">Art Spires Academy</h2>
                         <div className="card-actions justify-start">
-                            <button className="btn btn-sm btn-success btn-outline">View Details <FaArrowRight></FaArrowRight></button>
+                            <Link to="/ProjectDetailsOne"><button className="btn btn-sm btn-success btn-outline">View Details <FaArrowRight></FaArrowRight></button></Link>
                             <a href="https://art-spires-academy.web.app/" target='blank'>
                                 <button className="btn btn-sm btn-success btn-outline">Live Demo</button>
                                 </a>
@@ -28,7 +29,7 @@ const Portfolio = () => {
                     <div className="card-body text-black">
                         <h2 className="card-title">Online Toys Shop</h2>
                         <div className="card-actions justify-start">
-                            <button className="btn btn-sm btn-success btn-outline">View Details <FaArrowRight></FaArrowRight></button>
+                            <Link to='/ProjectDetailsSecond'><button className="btn btn-sm btn-success btn-outline">View Details <FaArrowRight></FaArrowRight></button></Link>
                             <a href="https://toys-shop-7b335.web.app/" target='blank'>
                                 <button className="btn btn-sm btn-success btn-outline">Live Demo</button>
                                 </a>
@@ -40,7 +41,7 @@ const Portfolio = () => {
                     <div className="card-body text-black">
                         <h2 className="card-title">Chefs Cuisine</h2>
                         <div className="card-actions justify-start">
-                            <button className="btn btn-sm btn-success btn-outline">View Details <FaArrowRight></FaArrowRight></button>
+                        <Link to='/ProjectDetailsThird'><button className="btn btn-sm btn-success btn-outline">View Details <FaArrowRight></FaArrowRight></button></Link>
                             <a href="https://fastest-food-service.web.app/" target='blank'>
                                 <button className="btn btn-sm btn-success btn-outline">Live Demo</button>
                                 </a>
